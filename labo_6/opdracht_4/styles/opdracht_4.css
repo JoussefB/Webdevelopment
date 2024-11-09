@@ -17,6 +17,3 @@ a:hover{
 .stippeltjesrand{
     border: 1px black dotted;
 }
-a::before{
-    background-image: url("";
-}
