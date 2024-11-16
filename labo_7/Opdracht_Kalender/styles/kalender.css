@@ -1,0 +1,27 @@
+
+.titel  {
+    background-color: rgb(170, 170, 200);
+    color: white;
+}
+
+thead th {
+    background-color: rgb(35,37,70);
+    color: rgb(200,190,240);
+}
+
+
+tbody td.vorige-maand,
+tbody td.volgende-maand {
+    color: rgb(240, 240, 240);
+    background-color: grey;
+}
+
+
+ td:first-child,
+ td:last-child {
+    background-color: rgb(255, 220, 220);
+}
+
+.vrijedag {
+    background-color: rgb(250, 120, 120);
+}
