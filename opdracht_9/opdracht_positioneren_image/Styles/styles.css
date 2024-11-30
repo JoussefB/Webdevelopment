@@ -1,0 +1,32 @@
+body {
+    font-family: Helvetica, sans-serif;
+    background-color: lightgrey;
+    width: 60%;
+    margin: 0 auto;
+}
+
+article {
+    font-size: 1.25em;
+    margin: 10px;
+    border: 1px solid black;
+    padding: 10px;
+    overflow: hidden;
+}
+
+article img {
+    margin: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+article:nth-of-type(even) img {
+    float: right;
+}
+
+article:nth-of-type(odd) img {
+    float: left;
+}
+
+article p {
+    margin: 0;
+}
