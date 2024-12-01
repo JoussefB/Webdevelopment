@@ -1,11 +1,10 @@
-/* Algemene stijl */
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     display: grid;
-    grid-template-columns: 70% 20%;  /* Verklein de news sectie naar 20% breedte */
-    gap: 2%;  /* Ruimte tussen de kolommen */
+    grid-template-columns: 70% 20%;
+    gap: 2%;
 }
 
 h1,
@@ -23,23 +22,6 @@ h1 {
 h2 {
     font-size: 2.4em;
     margin-bottom: 0;
-    
-}aside{
-     width: 250px;
-     background-color: white;
-     border:1px #999999;
-     color:darkgrey;
-     font-size:90%;
-     padding-left:10px;
-     padding-right:10px;
-     margin-left:10px;
-     float:right;
- }
-aside > h3{
-    color:white;
-    background:blue;
-    text-align: center;
-    font-size: 120%;
 }
 
 h3 {
@@ -49,11 +31,10 @@ h3 {
     font-size: 1.2em;
 }
 
-/* Header */
 header {
     background-image: url(../images/bgsky3.jpg);
     background-size: cover;
-    grid-column: span 2;  /* Header over beide kolommen */
+    grid-column: span 2;
     height: 200px;
     text-align: center;
     position: relative;
@@ -65,13 +46,12 @@ header>img {
     right: 10%;
 }
 
-/* Introductie */
 .introduction {
     background-color: white;
     color: black;
     padding: 20px 30px;
-    display: flex;  /* Zorgt ervoor dat het logo en de tekst naast elkaar staan */
-    align-items: center;  /* Zorgt ervoor dat het logo en de tekst verticaal worden uitgelijnd */
+    display: flex;
+    align-items: center;
 }
 
 .introduction .logo {
@@ -79,19 +59,17 @@ header>img {
     margin-right: 20px;
 }
 
-/* Nieuws sectie */
 .news {
     background-color: #dddddd;
     border: 1px solid #999999;
     padding: 10px;
     box-sizing: border-box;
-    overflow: auto;  /* Zorgt ervoor dat content niet buiten de sectie valt */
+    overflow: auto;
 }
 
-/* Footer en overige secties */
 footer,
 .bottom {
-    grid-column: span 2;  /* Footer over de volledige breedte van de pagina */
+    grid-column: span 2;
     background-color: #666666;
     color: white;
     padding: 20px 0;
@@ -112,14 +90,12 @@ footer,
     color: red;
 }
 
-/* Copyright */
 footer>p {
     text-align: center;
     background-color: white;
     color: black;
 }
 
-/* Gallery */
 .gallery {
     background-color: #999999;
     line-height: 0;
@@ -139,4 +115,28 @@ footer>p {
     width: 180px;
     border: 10px solid white;
     box-sizing: border-box;
+}
+
+aside {
+    width: 250px;
+    background-color: white;
+    border: 1px #999999;
+    color: darkgrey;
+    font-size: 90%;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 10px;
+    float: right;
+}
+
+aside > h3 {
+    color: white;
+    background: blue;
+    text-align: center;
+    font-size: 120%;
+}
+
+p > span {
+    color: darkblue;
+    font-weight: bold;
 }
