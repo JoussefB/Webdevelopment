@@ -1,8 +1,0 @@
-a::before {
-    content: "";
-    background: url("../images/blue.png") no-repeat center center;
-    width: 16px;
-    height: 16px;
-    display: inline-block;
-    margin-right: 6px;
-}

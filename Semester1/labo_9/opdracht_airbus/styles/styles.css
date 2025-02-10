@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 70% 20%;
+    gap: 2%;
+}
+
+h1,
+h2 {
+    color: darkblue;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: bold;
+    font-style: italic;
+}
+
+h2 {
+    font-size: 2.4em;
+    margin-bottom: 0;
+}
+
+h3 {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+header {
+    background-image: url(bgsky3.jpg);
+    background-size: cover;
+    grid-column: span 2;
+    height: 200px;
+    text-align: center;
+    position: relative;
+}
+
+header>img {
+    position: absolute;
+    bottom: 30px;
+    right: 10%;
+}
+
+.introduction {
+    background-color: white;
+    color: black;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+}
+
+.introduction .logo {
+    width: 150px;
+    margin-right: 20px;
+}
+
+.news {
+    background-color: #dddddd;
+    border: 1px solid #999999;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+footer,
+.bottom {
+    grid-column: span 2;
+    background-color: #666666;
+    color: white;
+    padding: 20px 0;
+    line-height: 2em;
+}
+
+.bottom>div {
+    width: 200px;
+    margin-left: 120px;
+    display: inline-block;
+}
+
+.bottom a {
+    color: inherit;
+}
+
+.bottom a:hover {
+    color: red;
+}
+
+footer>p {
+    text-align: center;
+    background-color: white;
+    color: black;
+}
+
+.gallery {
+    background-color: #999999;
+    line-height: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.foto {
+    display: inline-block;
+    border: 1px dotted white;
+    margin: 20px;
+}
+
+.foto>img {
+    height: 180px;
+    width: 180px;
+    border: 10px solid white;
+    box-sizing: border-box;
+}
+
+aside {
+    width: 250px;
+    background-color: white;
+    border: 1px #999999;
+    color: darkgrey;
+    font-size: 90%;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 10px;
+    float: right;
+}
+
+aside > h3 {
+    color: white;
+    background: blue;
+    text-align: center;
+    font-size: 120%;
+}
+
+p > span {
+    color: darkblue;
+    font-weight: bold;
+}
