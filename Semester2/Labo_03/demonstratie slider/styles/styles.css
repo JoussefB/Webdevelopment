@@ -1,0 +1,24 @@
+body {
+	font-family: Arial, sans-serif;
+}
+.colorpicker {
+	display: flex;
+	align-items: center;
+	width: 400px;
+	padding: 20px;
+	border: 2px solid #ccc;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.sliders {
+	flex: 1;
+	margin-right: 20px;
+}
+.slider {
+	width: 100%;
+}
+.colorDemo {
+	width: 100px;
+	height: 100px;
+	border: 1px solid black;
+}

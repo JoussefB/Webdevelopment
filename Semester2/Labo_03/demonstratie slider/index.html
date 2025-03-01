@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+	<title>Demonstratie slider</title>
+	<script type="text/javascript" charset="utf-8" src="scripts/code.js"></script>
+	<link rel="stylesheet" href="styles/styles.css"/>
+</head>
+<body>
+<div class="colorpicker">
+	<section class="sliders">
+		<label>Rood: <span id="redValue">0</span> <input type="range" class="slider" id="red" value="0" min="0" max="255"> 255</label><br>
+		<label>Groen: <span id="greenValue">0</span> <input type="range" class="slider" id="green" value="0" min="0" max="255"> 255</label><br>
+		<label>Blauw: <span id="blueValue">0</span> <input type="range" class="slider" id="blue" value="0" min="0" max="255"> 255</label>
+	</section>
+	<section>
+		<div class="colorDemo"></div>
+	</section>
+</div>
+
+<br>
+<br>
+1. Waar wordt de event listener gekoppeld aan de slider? <br>
+in de setup <br>
+2. Waarom moeten we die op twee soorten events koppelen? <br>
+zodat de verandering kan woorden gelezen en aangepast worden <br>
+3. In de CSS file wordt nergens een rode kleur opgegeven, waar wordt dan wel de rode kleur van het blokje ingesteld? <br>
+in colorDemos[0].style.backgroundColor = "red" <br>
+4. Waarom schrijven we telkens sliders[0] en colorDemos[0] en niet gewoon sliders of colorDemos? <br>
+Omdat we een HTMLCollection terugkrijgen met maar 1 item in, dus we pakken het eerste item uit de collection.
+
+
+</body>
+</html>
