@@ -11,14 +11,12 @@ function valideerFormulier(event) {
 
     let isValid = true;
 
-    // Voornaam validatie
     const voornaam = document.getElementById('voornaam').value.trim();
     if (voornaam.length > 30) {
         setError('voornaam', 'max. 30 karakters');
         isValid = false;
     }
 
-    // Familienaam validatie
     const familienaam = document.getElementById('familienaam').value.trim();
     if (!familienaam) {
         setError('familienaam', 'verplicht veld');
@@ -28,7 +26,6 @@ function valideerFormulier(event) {
         isValid = false;
     }
 
-    // Geboortedatum validatie
     const geboortedatum = document.getElementById('geboortedatum').value.trim();
     const datumPattern = /^\d{4}-\d{2}-\d{2}$/;
     if (!geboortedatum) {
@@ -39,7 +36,6 @@ function valideerFormulier(event) {
         isValid = false;
     }
 
-    // E-mail validatie
     const email = document.getElementById('email').value.trim();
     if (!email) {
         setError('email', 'verplicht veld');
@@ -49,7 +45,6 @@ function valideerFormulier(event) {
         isValid = false;
     }
 
-    // Aantal kinderen validatie
     const aantalKinderen = document.getElementById('aantalKinderen').value.trim();
     if (!isGetal(aantalKinderen)) {
         setError('aantalKinderen', 'is geen positief getal');
