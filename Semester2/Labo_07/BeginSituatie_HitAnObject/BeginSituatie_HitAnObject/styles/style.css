@@ -1,0 +1,19 @@
+#playField{
+    height: 800px;
+    width: 600px;
+    border: black 1px solid;
+}
+
+#target {
+    position: absolute;
+}
+.image{
+    position: absolute;
+
+}
+#startGame {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
