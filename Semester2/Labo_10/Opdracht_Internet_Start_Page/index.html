@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+	<meta charset="UTF-8">
+	<title>Oefening</title>
+	<link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+<section class="search">
+	<h1>My Internet Start Page</h1>
+	<h2>Zoekopdracht</h2>
+	<input id="searchbar" type="search" name="searchbar" aria-label="Zoekopdracht">
+	<h3>Start je commando met &quot;/[karakter] [zoekopdracht]&quot;</h3>
+	<button id="buttonGo" type="button">GO!</button>
+</section>
+<section class="history">
+	<h2>History</h2>
+	<button id="sortButton" type="button">Sorteer op titel (A-Z)</button>
+	<div class="history-container"></div>
+</section>
+<script src="scripts/storage.js"></script>
+<script src="scripts/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+body{
+    font-family: Helvetica, sans-serif;
+    text-align: left;
+    margin-left: 10%;
+}
+#searchbar{
+    height: 30px;
+    width: 80%;
+}
+#buttonGo{
+    width: 80%;
+    height: 40px;
+    background-color: green;
+    color: white;
+    font-size:1.1em;
+}
+#buttonGo:hover{
+    background-color: darkgreen;
+}
+
+.history-container {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.history-item {
+    border-radius: 5px;
+    text-align: left;
+    height: 120px;
+    padding: 10px;
+    color: white;
+}
+
+.history-button{
+    border-radius: 3px;
+    color: black;
+
+}
